@@ -18,7 +18,7 @@ def receving(name, sock):
 
 host = socket.gethostbyname(socket.gethostname())
 port = 0
-server = ("192.168.56.1", 9090)  # server ip - address
+server = ("", 9090)  # server ip - address
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.bind((host, port))
 s.setblocking(0)
